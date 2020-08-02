@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/main.css">
+
+    <title> Voorraadkoken </title>
+  </head>
+
+  <body>
+    <img id = "topimage" src="img/Cooking2crop.jpg" alt="Let's cook!">
+    <header id="mainheader">
+        Voorraadkoken
+    </header>
+
+    <main id = "mainbody">
+      <p id="voorraad">  Wat heb je op voorraad?
+        <input type = 'button' id = 'showvoorraad' value = 'Show' />
+        <ul>Voorraad </ul> </p>
+        <div id="voorraadData"></div>
+
+
+      <p id="recepten"> Wat wil je maken?
+        <label>Met welk ingredient wil je koken: </label>
+        <input type = 'text' id = 'ingredient' placeholder="bijv. aardappelen" type="string" class="recipeIngredient" />
+        <input type = 'button' id = 'search' value = 'Search' />
+        <ul>Recepten </ul> </p>
+        <div id = "template">
+          <template id="receptensearch">
+            <div class = "nameRecipe"> Recept: <span class = "name"></span></div>
+            <div class = "ingredienten"> Ingredienten: <span class = "ingredients"></span></div>
+            <div class = "steps"> Bereidingswijze: <span class = "bereidingswijze"></span></div>
+          </template>
+        </div>
+      </main>
+
+      <script src="src/index.js"></script>
+  </body>
+</html>
